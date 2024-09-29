@@ -1,11 +1,13 @@
 ---
 layout: page
-title: Schedule
-description: The weekly event schedule.
+title: Meetings
+description: Listing of SIG meetings and topics.
 ---
 
-# Weekly Schedule
+# Meetings
 
-{% for schedule in site.schedules %}
-{{ schedule }}
+**Usually, we will meet in every Friday from 5-6pm in Siebel 2102.**
+
+{% for module in site.modules %}
+{{ module }}
 {% endfor %}

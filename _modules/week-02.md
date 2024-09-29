@@ -1,5 +1,5 @@
 ---
-title: Basic Data Structures
+title: SIGExample Topic 1
 ---
 
 Oct 5

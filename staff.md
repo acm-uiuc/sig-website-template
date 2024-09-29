@@ -1,26 +1,26 @@
 ---
 layout: page
-title: Staff
-description: A listing of all the course staff members.
+title: Our Team
+description: A listing of all our leadership members.
 ---
 
-# Staff
+# Leadership
 
-Staff information is stored in the `_staffers` directory and rendered according to the layout file, `_layouts/staffer.html`.
+Leadership information is stored in the `_staffers` directory and rendered according to the layout file, `_layouts/staffer.html`.
 
-## Instructors
+## Chairs
 
-{% assign instructors = site.staffers | where: 'role', 'Instructor' %}
-{% for staffer in instructors %}
+{% assign chairs = site.staffers | where: 'role', 'Chair' %}
+{% for staffer in chairs %}
 {{ staffer }}
 {% endfor %}
 
-{% assign teaching_assistants = site.staffers | where: 'role', 'Teaching Assistant' %}
-{% assign num_teaching_assistants = teaching_assistants | size %}
-{% if num_teaching_assistants != 0 %}
-## Teaching Assistants
+{% assign leads = site.staffers | where: 'role', 'Lead' %}
+{% assign num_leads = leads | size %}
+{% if num_leads != 0 %}
+## Leads
 
-{% for staffer in teaching_assistants %}
+{% for staffer in leads %}
 {{ staffer }}
 {% endfor %}
 {% endif %}
